@@ -361,6 +361,7 @@ DEPENDENCIES
   select2-rails
   spring
   spring-watcher-listen (~> 2.0.0)
+  sprockets-rails
   sqlite3
   stimulus-rails
   turbo-rails
