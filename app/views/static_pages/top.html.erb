@@ -1,0 +1,15 @@
+<div class="btn-title">
+  <div>マクアケ情報取得</div>
+</div>
+<div class="btn-spacing">
+  <%= link_to "マクアケ情報取得", static_pages_scraping_path, class: "btn btn-info" %>
+</div>
+
+<div class="btn-title">
+  <% if @data.present? %>
+    <div>取得情報</div>
+    <% @data.each do |data|  %>
+      <div><%= data %></div>
+    <% end %>
+  <% end %>
+</div>

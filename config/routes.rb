@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  get 'static_pages/top'
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get 'static_pages/scraping', to: 'static_pages#scraping'
+  get 'static_pages/csv', to: 'static_pages#csv'
 end
