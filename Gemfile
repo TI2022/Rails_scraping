@@ -21,6 +21,7 @@ gem 'carrierwave'
 gem 'ransack'
 gem 'devise'
 gem 'bootstrap',    '~> 4.4.1'
+gem 'bootstrap-sass'
 gem 'faker'
 gem 'roo'
 gem 'rounding'
@@ -43,6 +44,10 @@ group :development do
   gem 'listen'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :production do
+  gem 'pg', '0.20.0'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
